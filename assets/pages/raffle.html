@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffle - Mindy Travle</title>
+    <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header class="header-index">
+        <img src="../images/logo.png" alt="" class="logo">
+        <nav>
+            <ul class="navigation-list">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="./aboutUs.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./information.html">Information</a></li>
+                <li><a href="./benfitsTips.html">Benefits and Tips</a></li>
+                <li><a href="#">Raffle</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="title-raffle">
+            <h1>Raffle</h1>
+            <h2>You can collaborate and participate in a raffle for a 1-week trip</h2>
+        </section>
+        <article class="form">
+            <form action="../data/show_data.html">
+                <div class="form-div">
+                    <label for="first-name">First name:</label>
+                    <input type="text" id="first-name" name="first_name">
+                </div>
+                <div class="form-div">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last_name">
+                </div> 
+                <div class="form-div">
+                    <label for="email-user">E-mail:</label>
+                    <input type="email" id="email-user" name="email_user">
+                </div>
+                <div class="form-div"> 
+                    <label for="ciudad">Choose Country</label>
+                    <select id="country-sel" name="country-sel">
+                      <option value=" ">-Choose Country-</option>
+                      <option value="Ar">Argentina</option>
+                      <option value="Fr">France</option>
+                      <option value="Va">Vaticano Republic</option>
+                      <option value="Gr">Greece</option>
+                      <option value="Br">Brasil</option>
+                    </select>
+                  </div>
+                  <div class="form-div">
+                    <label for="day-sel">Choose Date</label>
+                    <input type="date" id="day-sel" name="dia" required />
+                  </div>
+                  <div class="payment-div">
+                        <h5>Payment Method</h5>
+                        <div>
+                            <input type="radio" id="pay-meth1" name="pay_meth" value="Cash">
+                            <label for="pay-meth1">Cash</label>
+                        </div>
+                        <div>  
+                            <input type="radio" id="pay-meth2" name="pay_meth" value="Credit">                 
+                            <label for="pay-meth2">Credit card</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="pay-meth3" name="pay_meth" value="Debit">
+                            <label for="pay-meth3">Debit card</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="msg">Message(Optional)</label>
+                        <input type="text" class="message" id="msg" name="Message">
+                    </div>
+                <input type="submit" value="Send">
+            </form>
+            <div class="raffle-map">
+                <p>To participate you must be in Toronto</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184551.90977297974!2d-79.54286371896974!3d43.71837095796389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20Ontario%2C%20Canad%C3%A1!5e0!3m2!1ses!2sar!4v1687492151583!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </article>
+    </main>
+
+</body>
+</html>
